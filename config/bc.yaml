@@ -1,0 +1,14 @@
+name: branko-bajic
+region: tor
+static_sites:
+- build_command: npx react-scripts build
+  environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: branko-bajic/personal-website
+  name: personal-website
+  output_dir: build
+  catchall_document: index.html
+  routes:
+  - path: /
