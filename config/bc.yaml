@@ -6,8 +6,8 @@ static_sites:
   github:
     branch: main
     deploy_on_push: true
-    repo: branko-bajic/personal-website
-  name: personal-website
+    repo: branko-bajic/eisi-website
+  name: eisi-website
   output_dir: build
   catchall_document: index.html
   routes:
