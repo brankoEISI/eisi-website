@@ -1,4 +1,4 @@
-name: branko-bajic
+name: eisi-website
 region: tor
 static_sites:
 - build_command: npx react-scripts build
@@ -6,7 +6,7 @@ static_sites:
   github:
     branch: main
     deploy_on_push: true
-    repo: branko-bajic/eisi-website
+    repo: brankoEISI/eisi-website
   name: eisi-website
   output_dir: build
   catchall_document: index.html
