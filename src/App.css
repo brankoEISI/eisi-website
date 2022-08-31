@@ -23,6 +23,7 @@
   font-size: calc(20px + 2vmin);
   color: white;
   font-family: "Alien Encounters";
+  z-index: 1;
 }
 
 .Body {
@@ -32,6 +33,7 @@
   font-size: calc(20px + 1vmin);
   color: white;
   font-family: "Alien Encounters";
+  z-index: 1;
 }
 
 .Footer {

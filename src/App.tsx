@@ -20,8 +20,8 @@ function App() {
     <React.Fragment>
       { backgroundLoaded &&
         <div className="App" style={{ backgroundImage: `url(${background})`}}>
-          <div className="Clouds-Section">
 
+          <div className="Clouds-Section">
             {/* Shadowed Cloud */}
             <div className="shadowed-cloud-container">
               <div className="shadowed-cloud-sprite"/>
@@ -37,11 +37,12 @@ function App() {
               <div className="small-cloud-sprite"/>
             </div>
           </div>
+
           <div className="Header">
             Emerging Intuition Software Inc.
           </div>
-          <div className="Body">
 
+          <div className="Body">
             {/* Main Menu */}
             {optionSelected === MAIN_MENU &&
               <React.Fragment>
