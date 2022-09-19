@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BallTriangle } from "react-loader-spinner";
 import "./Clouds.css";
 import "./App.css";
-const background = require("./assets/neon-city.jpg");
+const background = require("./assets/emerging.png");
 
 function App() {
   const MAIN_MENU = "MAIN_MENU";
@@ -21,21 +21,7 @@ function App() {
       { backgroundLoaded &&
         <div className="App" style={{ backgroundImage: `url(${background})`}}>
 
-          <div className="Clouds-Section">
-            {/* Shadowed Cloud */}
-            <div className="shadowed-cloud-container">
-              <div className="shadowed-cloud-sprite"/>
-            </div>
-
-            {/* Regular Cloud */}
-            <div className="cloud-container">
-              <div className="cloud-sprite"/>
-            </div>
-
-            {/* Small Cloud */}
-            <div className="small-cloud-container">
-              <div className="small-cloud-sprite"/>
-            </div>
+          <div className="Top">
           </div>
 
           <div className="Header">
@@ -47,7 +33,7 @@ function App() {
             {optionSelected === MAIN_MENU &&
               <React.Fragment>
                 <div className="selectable-option" onMouseUp={() => setOptionSelected(CONTACT)}>
-                  {"> Contact <"}
+                  {"Contact"}
                 </div>
               </React.Fragment>
             }
@@ -57,19 +43,19 @@ function App() {
               <React.Fragment>
                 <div className="selectable-option">
                   <a href="https://github.com/brankoEISI" target="_blank">
-                    {"> GitHub <"}
+                    {"GitHub"}
                   </a>
                 </div>
                 <br/>
                 <div className="selectable-option">
                   <a href="https://www.linkedin.com/in/branko-bajic/" target="_blank">
-                    {"> LinkedIn <"}
+                    {"LinkedIn"}
                   </a>
                 </div>
                 <br/>
                 <br/>
                 <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
-                  {"> Main Menu <"}
+                  {"Main Menu"}
                 </div>
               </React.Fragment>
             }
