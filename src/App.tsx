@@ -70,7 +70,7 @@ function App() {
               height="40%"
               width="40%"
               radius={3}
-              color="#de33f4"
+              color="#474646"
               ariaLabel="ball-triangle-loading"
               visible={true}
               wrapperStyle={{alignItems: "center", justifyContent: "center"}}
