@@ -90,9 +90,7 @@ function App() {
                     {"LinkedIn"}
                   </a>
                 </div>
-                <br/>
-                <br/>
-                <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
+                <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)} style={{marginTop: 15}}>
                   {"Main Menu"}
                 </div>
               </React.Fragment>
