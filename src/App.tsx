@@ -2,11 +2,17 @@ import React, { useEffect, useState } from "react";
 import { BallTriangle } from "react-loader-spinner";
 import "./Clouds.css";
 import "./App.css";
+import MediaCard from "./MediaCard";
+import { Typography } from "@mui/material";
 const background = require("./assets/emerging.png");
+const about = require("./assets/about.jpg");
+const email = require("./assets/email.jpg");
 
 function App() {
   const MAIN_MENU = "MAIN_MENU";
   const CONTACT = "CONTACT";
+  const ABOUT = "ABOUT";
+  const EMAIL = "EMAIL";
   const [optionSelected, setOptionSelected] = useState(MAIN_MENU);
   const [backgroundLoaded, setBackgroundLoaded] = useState(false);
 
@@ -32,8 +38,36 @@ function App() {
             {/* Main Menu */}
             {optionSelected === MAIN_MENU &&
               <React.Fragment>
+                <div className="selectable-option" onMouseUp={() => setOptionSelected(ABOUT)}>
+                  {"About"}
+                </div>
+                <br/>
                 <div className="selectable-option" onMouseUp={() => setOptionSelected(CONTACT)}>
                   {"Contact"}
+                </div>
+              </React.Fragment>
+            }
+
+            {/* About */}
+            {optionSelected === ABOUT &&
+              <React.Fragment>
+                <MediaCard
+                  header={
+                    <div className="CardHeader" color="red">
+                      About Us
+                    </div>
+                  }
+                  body={
+                    <Typography variant="body1" sx={{ color: 'common.white' }}>
+                      We're a team of passionate developers looking to change how software projects are approached. We pride ourselves on creating quality, maintanable software that's tailored to your needs.
+                      <br/>
+                      Contact us for a free quote!
+                    </Typography>
+                  }
+                  image={about}>
+                </MediaCard>
+                <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
+                  {"Main Menu"}
                 </div>
               </React.Fragment>
             }
@@ -41,6 +75,10 @@ function App() {
             {/* Contact */}
             {optionSelected === CONTACT &&
               <React.Fragment>
+                <div className="selectable-option" onMouseUp={() => setOptionSelected(EMAIL)}>
+                    {"Email"}
+                </div>
+                <br/>
                 <div className="selectable-option">
                   <a href="https://github.com/brankoEISI" target="_blank">
                     {"GitHub"}
@@ -54,6 +92,27 @@ function App() {
                 </div>
                 <br/>
                 <br/>
+                <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
+                  {"Main Menu"}
+                </div>
+              </React.Fragment>
+            }
+            {/* About */}
+            {optionSelected === EMAIL &&
+              <React.Fragment>
+                <MediaCard
+                  header={
+                    <div className="CardHeader" color="red">
+                      Email Us
+                    </div>
+                  }
+                  body={
+                    <Typography variant="body1" sx={{ color: 'common.white' }}>
+                      eisoftware@mailfence.com
+                    </Typography>
+                  }
+                  image={email}>
+                </MediaCard>
                 <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
                   {"Main Menu"}
                 </div>

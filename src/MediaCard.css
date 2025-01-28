@@ -1,0 +1,18 @@
+.CardHeader {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(20px + 2vmin);
+    color: rgba(239, 247, 4, 0.831);
+    font-family: "Alien Encounters";
+    z-index: 1;
+}
+
+@font-face {
+    font-family: 'Alien Encounters';
+    src: url('./assets/alien-encounters-bold-italic-webfont.woff2') format('woff2'),
+         url('./assets/alien-encounters-bold-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
