@@ -17,13 +17,6 @@ type CardProps = {
 export const MediaCard = ({header, body, image}: CardProps) => {
   return (
     <Card sx={{ width: 370, backgroundColor: "Grey", marginBottom: 5 }}>
-      {image &&
-        <CardMedia
-          sx={{ height: 240 }}
-          image={image}
-          title="green iguana"
-        />
-      }
       <CardContent>
         {header}
         {body}

@@ -54,18 +54,23 @@ function App() {
                 <MediaCard
                   header={
                     <div className="CardHeader" color="red">
-                      About Us
+                      About
                     </div>
                   }
                   body={
                     <Typography variant="body1" sx={{ color: 'common.white' }}>
-                      We're a team of passionate developers looking to change how software projects are approached. We pride ourselves on creating quality, maintanable software that's tailored to your needs.
+                      We're a team of passionate developers looking to raise the bar. We pride ourselves on creating quality, maintanable software that's tailored to your needs.
                       <br/>
-                      Contact us for a free quote!
+                      <br/>
+                      Contact us today for a free quote!
                     </Typography>
                   }
                   image={about}>
                 </MediaCard>
+                <div className="selectable-option" onMouseUp={() => setOptionSelected(CONTACT)}>
+                  {"Contact"}
+                </div>
+                <br/>
                 <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
                   {"Main Menu"}
                 </div>
@@ -95,13 +100,13 @@ function App() {
                 </div>
               </React.Fragment>
             }
-            {/* About */}
+            {/* Email */}
             {optionSelected === EMAIL &&
               <React.Fragment>
                 <MediaCard
                   header={
                     <div className="CardHeader" color="red">
-                      Email Us
+                      Email
                     </div>
                   }
                   body={
@@ -121,7 +126,7 @@ function App() {
         </div>
       }
       {
-        !backgroundLoaded && // display loading sequence while background image is loading
+        !backgroundLoaded &&  // display loading sequence while background image is loading
           <div className="App">
             <BallTriangle
               height="40%"
