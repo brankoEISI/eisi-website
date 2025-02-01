@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { BallTriangle } from "react-loader-spinner";
-import "./Clouds.css";
 import "./App.css";
 import MediaCard from "./MediaCard";
 import { Typography } from "@mui/material";
@@ -58,8 +57,11 @@ function App() {
                     </div>
                   }
                   body={
-                    <Typography variant="body1" sx={{ color: 'common.white' }}>
-                      We're a team of passionate developers looking to raise the bar. We pride ourselves on creating quality, maintanable software that's tailored to your needs.
+                    <Typography variant="body1" fontSize={18} sx={{ color: 'common.white', fontFamily: "monospace" }}>
+                      We're a team of passionate developers looking to raise the bar. We pride ourselves on creating quality, maintanable software that's tailored to your needs. 
+                      <br/>
+                      <br/>                      
+                      Based in Victoria BC, we only hire top Canadian talent.
                       <br/>
                       <br/>
                       Contact us today for a free quote!
@@ -71,7 +73,7 @@ function App() {
                   {"Contact"}
                 </div>
                 <br/>
-                <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
+                <div className="selectable-option" style={{marginTop: 15}} onMouseUp={() => setOptionSelected(MAIN_MENU)}>
                   {"Main Menu"}
                 </div>
               </React.Fragment>
@@ -110,7 +112,7 @@ function App() {
                     </div>
                   }
                   body={
-                    <Typography variant="body1" sx={{ color: 'common.white' }}>
+                    <Typography variant="body1" fontSize={22} sx={{ color: 'common.white', fontFamily: "monospace" }}>
                       eisoftware@mailfence.com
                     </Typography>
                   }

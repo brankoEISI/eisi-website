@@ -6,7 +6,16 @@
     font-size: calc(20px + 2vmin);
     color: rgba(239, 247, 4, 0.831);
     font-family: "Alien Encounters";
-    z-index: 1;
+}
+
+.CardContent {
+    width: 370;
+    background-color: rgba(99, 95, 85, 0.1);
+    margin-bottom: 5;
+}
+
+.Card {
+    font-family: "monospace";
 }
 
 @font-face {

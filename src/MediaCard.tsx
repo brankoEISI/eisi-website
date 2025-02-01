@@ -1,10 +1,7 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import "./MediaCard.css";
 
 type CardProps = {
@@ -16,8 +13,8 @@ type CardProps = {
 
 export const MediaCard = ({header, body, image}: CardProps) => {
   return (
-    <Card sx={{ width: 370, backgroundColor: "Grey", marginBottom: 5 }}>
-      <CardContent>
+    <Card className="Card" sx={{ width: 870, backgroundColor: "rgba(99, 95, 85, 0.4)", marginBottom: 5 }}>
+      <CardContent className="CardContent">
         {header}
         {body}
       </CardContent>
