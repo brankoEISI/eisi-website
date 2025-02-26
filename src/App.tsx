@@ -93,7 +93,7 @@ function App() {
                 </div>
                 <br/>
                 <div className="selectable-option">
-                  <a href="https://www.linkedin.com/in/branko-bajic/" target="_blank">
+                  <a href="https://www.linkedin.com/company/emerging-intuition-software-inc" target="_blank">
                     {"LinkedIn"}
                   </a>
                 </div>
